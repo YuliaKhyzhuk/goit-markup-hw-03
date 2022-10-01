@@ -30,6 +30,10 @@ body {
   padding-right: 15px;
 }
 
+header > .container {
+  border-bottom: 1px solid #ECECEC;
+}
+
 /* logo */
 .logo {
   color: var(--accent-color);
@@ -155,6 +159,20 @@ body {
 
 /* section */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.features {
+  padding-bottom: 33px;
+}
+
+.section.specialization {
+  padding-top: 33px;
+  padding-bottom: 155px;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -165,9 +183,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
-
-.title {
 }
 
 .feature-list .title,
@@ -188,6 +203,9 @@ body {
 }
 
 .feature-list .text {
+  margin-top: 0;
+  margin-bottom: 57px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
