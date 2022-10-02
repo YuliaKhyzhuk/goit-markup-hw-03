@@ -30,19 +30,11 @@ body {
   padding-right: 15px;
 }
 
-header > .container {
-  border-bottom: 1px solid #ECECEC;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-footer > .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 /* logo */
 .logo {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -76,7 +68,32 @@ footer > .container {
 
 /* Site nav */
 
+.main-nav {
+  border-bottom: 1px solid #ececec;
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.cont-nav {
+  display: flex;
+}
+
+nav {
+  display: flex;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -96,7 +113,15 @@ footer > .container {
   color: var(--accent-color);
 }
 
-.cont-nav a {
+.cont-nav .item + .item {
+  margin-left: 50px;
+}
+
+.cont-nav .cont {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -269,12 +294,12 @@ footer > .container {
 
 .card {
   padding: 60px 24px 20px;
-  border-left: 1px solid #EEEEEE;
-  border-bottom:  1px solid #EEEEEE;
-  border-right:  1px solid #EEEEEE;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 
   width: 370px;
-  }
+}
 
 .portfolio-list .item {
   text-decoration: none;
@@ -301,6 +326,12 @@ footer > .container {
 }
 
 /* footer */
+
+footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address {
   color: var(--primary-background-color);
 
@@ -324,16 +355,19 @@ footer > .container {
 }
 
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-white-space: nowrap;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
+.portfolio-list img {
+  display: block;
+}
