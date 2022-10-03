@@ -224,7 +224,7 @@ nav {
 
 .feature-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .feature-list .item {
@@ -265,7 +265,7 @@ nav {
 
 .specialization-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .section.specialization {
@@ -277,15 +277,7 @@ nav {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
-}
-
-team-list .card{
-  /* padding:  виставила імені і позиції. Можна замінити на загальний тут. Зберегти паддінг між іменем і позицією
-  Якщо в карту включити фото, паддинг сюди не ставити точно, але бордер пошириться на все - і фото, і підпис до нього*/ 
-  border-left: ;
-  border-bottom: ;
-  border-right: ;
+  /* justify-content: space-between; */
 }
 
 .team-list .title {
@@ -317,7 +309,7 @@ team-list .card{
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   padding-bottom: 50px;
 }
 
@@ -425,4 +417,25 @@ footer > .container {
 
 .portfolio-list img {
   display: block;
+}
+
+/* Repeta grid */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+} 
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
