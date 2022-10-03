@@ -224,6 +224,7 @@ nav {
 
 .feature-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .feature-list .item {
@@ -262,6 +263,11 @@ nav {
 
 /* section specialization */
 
+.specialization-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section.specialization {
   padding-top: 33px;
   padding-bottom: 155px;
@@ -269,9 +275,24 @@ nav {
 
 /* section team */
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+team-list .card{
+  /* padding:  виставила імені і позиції. Можна замінити на загальний тут. Зберегти паддінг між іменем і позицією
+  Якщо в карту включити фото, паддинг сюди не ставити точно, але бордер пошириться на все - і фото, і підпис до нього*/ 
+  border-left: ;
+  border-bottom: ;
+  border-right: ;
+}
+
 .team-list .title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -281,6 +302,10 @@ nav {
 }
 
 .team-list .position {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
@@ -290,9 +315,14 @@ nav {
 
 /* filter */
 
-
 .filter-list {
+  display: flex;
+  justify-content: center;
   padding-bottom: 50px;
+}
+
+.filter-list .item + .item {
+  margin-left: 8px;
 }
 
 .filter {
@@ -317,8 +347,8 @@ nav {
 
 /* portfolio */
 
-.card {
-  padding: 60px 24px 20px;
+.portfolio-list .card {
+  padding: 60px 24px 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
