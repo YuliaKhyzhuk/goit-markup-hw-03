@@ -22,6 +22,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -60,29 +66,29 @@ body {
   color: var(--primary-text-color);
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 /* Site nav */
 
 .main-nav {
   border-bottom: 1px solid #ececec;
   display: flex;
+  align-items: center;
 }
 
 .site-nav {
   display: flex;
+  align-items: center;
+  margin-left: 93px;
 }
 
 .cont-nav {
   display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 nav {
   display: flex;
+  align-items: center;
 }
 
 .site-nav .item + .item {
@@ -195,20 +201,11 @@ nav {
   background-color: var(--primary-background-color);
 }
 
-/* section */
+/* sections */
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section.features {
-  padding-bottom: 0;
-}
-
-.section.specialization {
-  padding-top: 33px;
-  padding-bottom: 155px;
 }
 
 .section-title {
@@ -221,6 +218,20 @@ nav {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+/* section features */
+
+.feature-list {
+  display: flex;
+}
+
+.feature-list .item {
+  width: 270px;
+}
+
+.section.features {
+  padding-bottom: 0;
 }
 
 .feature-list .title,
@@ -249,6 +260,15 @@ nav {
   letter-spacing: 0.03em;
 }
 
+/* section specialization */
+
+.section.specialization {
+  padding-top: 33px;
+  padding-bottom: 155px;
+}
+
+/* section team */
+
 .team-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -266,7 +286,10 @@ nav {
   text-align: center;
 }
 
+/* section portfolio */
+
 /* filter */
+
 
 .filter-list {
   padding-bottom: 50px;
@@ -291,6 +314,8 @@ nav {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
 }
+
+/* portfolio */
 
 .card {
   padding: 60px 24px 20px;
