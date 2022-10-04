@@ -268,11 +268,6 @@ nav {
   justify-content: space-between;
 }
 
-.section.specialization {
-  padding-top: 33px;
-  padding-bottom: 155px;
-}
-
 /* section team */
 
 .section-team {
@@ -292,11 +287,16 @@ nav {
   margin-right: 0;
 }
 
+.team-list .card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-list .title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  /* padding-top: 30px;
+  padding-bottom: 10px; */
 
   font-weight: 500;
   font-size: 16px;
@@ -308,7 +308,7 @@ nav {
 .team-list .position {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -321,11 +321,8 @@ nav {
 
 .filter-list {
   display: flex;
-  /* justify-content: center; */
-  padding-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 575px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-list .item + .item {
@@ -379,7 +376,7 @@ nav {
 }
 
 .portfolio-list .card {
-  padding: 60px 24px 20px 24px;
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -418,7 +415,15 @@ footer > .container {
   padding-bottom: 60px;
 }
 
+.foot .logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
 .address {
+  margin-top: 0;
+  margin-bottom: 9px;
   color: var(--primary-background-color);
 
   font-size: 14px;
@@ -439,6 +444,12 @@ footer > .container {
 .address-foot {
   font-style: normal;
 }
+
+.address-foot .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+
 
 .visually-hidden {
   position: absolute;
